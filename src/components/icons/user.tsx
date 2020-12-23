@@ -3,7 +3,7 @@ import React from 'react';
 export const User: React.FC<{ size: number }> = ({ size = 6 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-${size} w-${size} text-black hover:text-gray-700`}
+    className={`h-${size} w-${size} text-black hover:text-gray-700 cursor-pointer`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor">
