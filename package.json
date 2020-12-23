@@ -10,7 +10,7 @@
     "build": "npm run clean && tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
   },
-  "version": "1.0.17",
+  "version": "1.0.18",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^17.0.0",
