@@ -1,9 +1,14 @@
 import React from 'react';
 
-export const Heart: React.FC<{ size: number }> = ({ size = 6 }) => (
+interface Props {
+  size: number;
+  color: string;
+}
+
+export const Heart: React.FC<Props> = ({ size = 6, color = 'gray' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`h-${size} w-${size} text-black hover:text-gray-700 cursor-pointer`}
+    className={`h-${size} w-${size} text-${color}-400 hover:text-${color}-600 cursor-pointer`}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor">
